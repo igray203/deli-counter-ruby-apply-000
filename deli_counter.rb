@@ -12,11 +12,23 @@ def line(array)
   end
 end
 
-def take_a_number(person,names)
-  person<<names
-    location = person.index(names)+1
-    puts "Welcome, #{names}. You are number #{location} in line."
+#def take_a_number(person,names)
+#  person<<names
+#    location = person.index(names)+1
+#    puts "Welcome, #{names}. You are number #{location} in line."
+#end
+
+$counter = 0
+
+def new_ticket_number(array)
+  $counter +=1
+  array<<counter
+  puts "Welcome!  You have ticket number #{counter}."
 end
+#deli empty first person gets #1 in line
+#ticket just puts the nubmer
+3now serving only displays number
+
 
 def now_serving(array)
   if array[0] != nil
